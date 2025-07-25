@@ -22,3 +22,50 @@ aside {
     overflow-y: auto;
     min-width: 0;
 }
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    color: #ff9800;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin-right: 1.5rem;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+article h1, article h2, article h3 {
+    color: #0077cc;
+}
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+article th, article td {
+    border: 1px solid #ddd;
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+
+article th {
+    background-color: #f0f0f0;
+}
+
+article tr:nth-child(even) {
+    background-color: #fafafa;
+}
