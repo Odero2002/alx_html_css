@@ -1,1 +1,24 @@
-/* Empty file for your custom styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    min-height: 0; /* Ensures children can scroll */
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    min-width: 0; /* Prevents overflow issues */
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    min-width: 0;
+}
