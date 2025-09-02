@@ -1,47 +1,20 @@
-/* Flexbox layout for body (column direction) */
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Flexbox layout for main (row direction) */
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
 }
 
-/* Article takes 2/3 of the width */
 article {
     flex: 2;
     overflow-y: auto;
 }
 
-/* Aside takes 1/3 of the width */
 aside {
     flex: 1;
     overflow-y: auto;
-}
-
-/* Make header and footer full width */
-header, footer {
-    width: 100%;
-}
-
-/* Add some spacing and styling */
-header {
-    padding: 1.5rem;
-    text-align: center;
-}
-
-footer {
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto;
-}
-
-/* Add some visual separation */
-article {
-    border-right: 1px solid #ddd;
 }
