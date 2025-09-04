@@ -1,3 +1,42 @@
+/* FAQ Section Styling */
+.faq-section, .faq {
+  background: #fffde7; /* Placeholder color, update from Figma */
+  border-radius: 14px;
+  padding: 40px 28px;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.faq-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  color: #fbc02d; /* Placeholder color, update from Figma */
+  text-align: center;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faq-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 16px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+}
+.faq-question {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+.faq-answer {
+  font-size: 1rem;
+  color: #666;
+}
 /* Membership Section Styling */
 .membership-section, .membership {
   background: #f9fbe7; /* Placeholder color, update from Figma */
