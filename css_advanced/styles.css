@@ -1,3 +1,32 @@
+/* Footer Section Styling */
+footer {
+  background: #263238; /* Placeholder color, update from Figma */
+  color: #fff;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 48px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+
+footer .footer-links {
+  margin-bottom: 16px;
+}
+footer .footer-links a {
+  color: #b0bec5;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+footer .footer-links a:hover {
+  color: #fff;
+}
+
+footer .footer-copy {
+  font-size: 0.95rem;
+  color: #b0bec5;
+}
 /* FAQ Section Styling */
 .faq-section, .faq {
   background: #fffde7; /* Placeholder color, update from Figma */
