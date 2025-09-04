@@ -1,3 +1,42 @@
+/* Videos List Section Styling */
+.videos-list, .video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  width: 320px; /* Placeholder width, update from Figma */
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+.video-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.video-card img, .video-card video {
+  width: 100%;
+  height: 180px; /* Placeholder height, update from Figma */
+  object-fit: cover;
+}
+.video-card .video-info {
+  padding: 16px;
+}
+.video-card .video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.video-card .video-meta {
+  font-size: 0.95rem;
+  color: #666;
+}
 /* Quote Section Styling */
 .quote, blockquote {
   background-color: #e0f7fa; /* Placeholder color, update from Figma */
