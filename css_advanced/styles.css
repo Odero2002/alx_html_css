@@ -1,0 +1,35 @@
+/* Header Styling */
+header {
+  background-color: #f5f5f5; /* Placeholder color, update from Figma */
+  height: 120px; /* Placeholder height, update from Figma */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px; /* Placeholder padding */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Banner/First Section Styling */
+section.banner, .banner {
+  background-image: url('images/banner.jpg'); /* Placeholder image, update path from Figma */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Placeholder height, update from Figma */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0 40px;
+}
+
+/* Example for banner text */
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
