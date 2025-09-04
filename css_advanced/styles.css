@@ -1,3 +1,53 @@
+/* Membership Section Styling */
+.membership-section, .membership {
+  background: #f9fbe7; /* Placeholder color, update from Figma */
+  border-radius: 16px;
+  padding: 48px 32px;
+  margin: 48px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  text-align: center;
+}
+
+.membership-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #33691e; /* Placeholder color, update from Figma */
+}
+
+.membership-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.membership-benefit {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px 16px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  min-width: 180px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.membership-cta {
+  display: inline-block;
+  background: #8bc34a; /* Placeholder color, update from Figma */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 14px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s;
+  margin-top: 24px;
+}
+.membership-cta:hover {
+  background: #689f38;
+}
 /* Videos List Section Styling */
 .videos-list, .video-list {
   display: flex;
