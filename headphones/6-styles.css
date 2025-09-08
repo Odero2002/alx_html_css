@@ -1,0 +1,278 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+:root {
+  --color-primary: #ff6565;
+  --color-text: #ffffff;
+  --font-family-base: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background-color: #071629;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 30px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 160px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+}
+
+.hero {
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 200px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background-color: var(--color-text);
+    height: 3px;
+    width: 25px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    top: -8px;
+}
+
+.nav-toggle-label span::after {
+    bottom: -8px;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #071629;
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav li {
+        margin: 20px 0;
+    }
+
+    .nav-toggle:checked ~ .nav {
+        display: block;
+    }
+}
+
+.results {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.results-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.results-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 80px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+.pentagon {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    background-color: var(--color-primary);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pentagon h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.pentagon p {
+    font-size: 18px;
+    color: var(--color-text);
+}
+
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact-content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 50px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    margin-left: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+}
+
+.copyright {
+    text-align: center;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
